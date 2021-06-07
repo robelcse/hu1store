@@ -1,0 +1,336 @@
+/**
+ * App Name: Hu1 Store
+ * App URI: https://www.hu1.store/
+ * App Author: itsRashad
+ * App Author URI: https://www.linkedin.com/in/itsrashad/
+ * App Description: Hu1 Store Web Application
+ * Version: 3.0.1
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ **/
+
+/*hide input type number arrows*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*end hide input type number arrows*/
+/*input type card*/
+.input-type-card{
+    display: flex;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.input-type-card input{
+    border: 0;
+    margin: 0;
+}
+.input-type-card input:focus{
+    box-shadow: none;
+}
+.input-type-card input:nth-child(2){
+    width: 100px;
+}
+.input-type-card input:last-child{
+    width: 80px;
+}
+/*end input type card*/
+.wrapper {
+    background: #f7f7f7
+}
+.header nav img {
+    height: auto;
+}
+.hu-menu {
+    color: #f4ac82;
+    font-size: 13px;
+    padding-top: 70px;
+}
+.hu1-bg {
+  background: #15161a;
+}
+.navbar {
+  padding: .2rem 1rem;
+}
+.navbar-nav {
+    display: contents;
+}
+a {
+    color: #ee161f;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+a:hover {
+    color: #000000;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+b, strong {
+    font-weight: 600;
+}
+ol {
+  list-style-type: none;
+}
+article ol li {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+article ol li ol {
+  padding-left: 20px;
+}
+article>ol {
+  padding-left: 0;
+}
+/*ol {
+  counter-reset: item
+}
+li {
+  display: block
+}
+li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item
+}
+*/
+.btn-primary {
+  color: #fff;
+  background-color: #c9101a;
+  border-color: #c9101a;
+}
+.btn-primary:hover {
+  color: #c9101a;
+  background-color: #000000;
+  border-color: #c9101a;
+}
+#item-data a {
+    color: #000000;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+#item-data a:hover {
+    color: #ee161f;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+.nav-item p {
+    color: #ee161f;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+}
+.sticky-top {
+    padding: 0 10px;
+}
+#item-data .card .card-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #232363;
+}
+#item-data .card {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+.gift-cards {
+    margin-bottom: 20px;
+    color: #000000;
+}
+.hu1-radio input[type="radio"] {
+    display: none;
+}
+.hu1-radio input[type="radio"]:checked+label span {
+    transform: scale(1.25);
+}
+.hu1-radio input[type="radio"]:checked+label .red {
+    border: 2px solid #0e4e1d;
+}
+.hu1-radio input[type="radio"]:checked+label .green {
+    border: 2px solid #0e4e1d;
+}
+.hu1-radio input[type="radio"]:checked+label .gray {
+    border: 2px solid #0e4e1d;
+}
+.hu1-radio label {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.hu1-radio label:hover span {
+    transform: scale(1.25);
+}
+.hu1-radio label span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform .2s ease-in-out;
+}
+.hu1-radio label span.red {
+    background: #7f7f7f;
+}
+.hu1-radio label span.green {
+    background: #ed1c24;
+}
+.hu1-radio label span.gray {
+    background: #22b14c;
+}
+
+.hu1-card {
+    margin: 20px 0;
+}
+
+.hu1-card img {
+    border-radius: 20px;
+}
+.hu1-card .centered {
+    width: 280px;
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.hu1-card .card img {
+    position: relative;
+    left: 300px;
+}
+
+.hu1-card .card .card-body {
+    color: #FFFFFF;
+    padding-top: 0;
+}
+
+.hu1-card .card .card-title {
+    margin-left: 35px;
+}
+#checkButton, #giftButton{
+    cursor: pointer;
+}
+.footer {
+    background: #d6d6d6;
+    color: #ee161f;
+}
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer .container {
+    padding-top: 10px;
+}
+
+.footer .secured-by {
+    margin-top: 35px;
+    padding-left: 175px;
+}
+
+.footer .secured-by img {
+    width: 60%;
+}
+
+.footer .copyright p {
+    margin-top: 55px;
+    text-align: center;
+}
+@media (max-width:576px) {
+  .hu1-card .card img {
+      position: relative;
+      left: 235px;
+  }
+  .hu1-card .card .card-title {
+      margin-left: 5px;
+  }
+  .hu1-card .centered {
+      position: absolute;
+      top: 65%;
+      left: 65%;
+      transform: translate(-48%, -60%);
+      width: 172px;
+  }
+  .hu1-card .centered p {
+      font-size: 10px;
+  }
+  .hu1-card .centered strong {
+      font-size: 11px;
+  }
+    .footer .secured-by {
+        padding-left: 15px;
+    }
+}
+@media (max-width:768px) {
+    .footer .copyright p {
+        margin-top: 0;
+        text-align: left;
+    }
+    .footer .secured-by {
+        margin-top: 0;
+    }
+    #myModal {
+        margin-top: 5%;
+        z-index: 99999;
+    }
+}
+@media print{
+    body .to-print-perent > *:not(.to-print-perent){
+        display: none;
+    }
+    body .to-print-perent .to-print{
+        display: block;
+    }
+}
+.ajax-load {
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.hu1loader {
+  display:inline-block;
+  font-size:0px;
+  padding:0px;
+}
+.hu1loader span {
+  vertical-align:middle;
+  border-radius:100%;
+  display:inline-block;
+  width:10px;
+  height:10px;
+  margin:3px 2px;
+  -webkit-animation:hu1loader 0.8s linear infinite alternate;
+  animation:hu1loader 0.8s linear infinite alternate;
+}
+.hu1loader span:nth-child(1) {
+  -webkit-animation-delay:-1s;
+  animation-delay:-1s;
+  background:rgba(236,22,31,0.6);
+}
+.hu1loader span:nth-child(2) {
+  -webkit-animation-delay:-0.8s;
+  animation-delay:-0.8s;
+  background:rgba(236,22,31,0.8);
+}
+.hu1loader span:nth-child(3) {
+  -webkit-animation-delay:-0.26666s;
+  animation-delay:-0.26666s;
+  background:rgba(236,22,31,1);
+}
+.hu1loader span:nth-child(4) {
+  -webkit-animation-delay:-0.8s;
+  animation-delay:-0.8s;
+  background:rgba(236,22,31,0.8);
+}
+.hu1loader span:nth-child(5) {
+  -webkit-animation-delay:-1s;
+  animation-delay:-1s;
+  background:rgba(236,22,31,0.4);
+}
+@keyframes hu1loader {
+  from {transform: scale(0, 0);}
+  to {transform: scale(1, 1);}
+}
+@-webkit-keyframes hu1loader {
+  from {-webkit-transform: scale(0, 0);}
+  to {-webkit-transform: scale(1, 1);}
+}

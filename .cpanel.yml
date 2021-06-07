@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ararif/public_html/curetech
+    - /bin/cp -R * $DEPLOYPATH
